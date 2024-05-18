@@ -1,9 +1,12 @@
 def merge_sort(arr):
-    if len(arr) > 1:  # if length is not greater than 1 array is already sorted 
-        left_arr = arr[:len(arr)//2]
-        right_arr = arr[len(arr)//2:]
+    if len(arr) > 1:  # if length is not greater than 1, array is already sorted 
+
+        # dividing the array
         
-        # recursion step
+        left_arr = arr[:len(arr)//2] # slicing operation to create a list that contains the first half of the elements from "arr"
+        right_arr = arr[len(arr)//2:] # slicing operation to create a list that contains the second half of the elements from "arr"
+        
+        #  recursion step
         merge_sort(left_arr)
         merge_sort(right_arr)
  
